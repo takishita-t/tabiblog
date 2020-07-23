@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @article.user_id = current_user.id
     if @article.save
-      redirect_to @article, notice: '作成できました'
+      redirect_to root_path, notice: '作成できました'
     else
       render :new, alert: '作成できませんでした'
     end
@@ -42,6 +42,7 @@ class ArticlesController < ApplicationController
      redirect_to root_path, alert: '削除できませんでした'
    end
   end
+  
   
   private
   

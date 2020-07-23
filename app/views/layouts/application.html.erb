@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>TabiBlog</title>
+    <title>TabApp</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-
     <%= render 'layouts/header'%>
     
+    <div class=header>
+      <div class="sub-title">
+        <h1>旅は一生の思い出</h1>
+        <p>旅の経験をみんなに共有しよう！</p>
+      </div>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+     <%= render 'layouts/footer'%>
   </body>
 </html>

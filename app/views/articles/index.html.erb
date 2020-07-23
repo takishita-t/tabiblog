@@ -1,0 +1,25 @@
+<div class='container'>
+  <div class="row">
+  <% @articles.each do |article|%>
+    <%= link_to article do %>
+      <div class="col-md-3 article-top article-block">
+        <% if article.image_id.present?%>
+         <%= image_tag attachment_url(article, :image), class: 'img-responsive top-padding image-size' %>
+        <%else%>
+         <%= image_tag 'top.jpg', class: 'img-responsive top-padding image-size' %>
+        <%end%>
+          <div class="title-bottom">
+            <p class="title"><%= article.title %></p>
+              <span>
+               <%= article.created_at.strftime("%Y年%-m月%-d日") %>
+              </span>
+          </div>
+       </div>
+     <% end%>
+   <% end %>
+  </div>
+  
+   <div class="row">
+     <%= link_to '新規投稿', new_article_path, class: 'article-top btn btn-primary' %>
+   </div>
+</div>

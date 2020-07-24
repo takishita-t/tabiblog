@@ -1,24 +1,18 @@
 # README
+# 概要
+Ruby on Railsの勉強としてブログ投稿型共有サイトです。一般的なメディアサイトに実装される、基本的な機能を実装しました。
+# バージョン
+Ruby 2.6.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rails 5.0.7.2
+# 実装機能
+## 記事関連
+* 一覧表示機能
+* 詳細表示機能
+* 削除機能
+* 編集機能
+##ユーザー関連
+* 投稿機能（画像・テキスト）
+* ログイン、ログアウト機能
+#その他
+* AWS(cloud9)による環境構築
